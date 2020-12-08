@@ -1,6 +1,6 @@
-import { Router } from "express";
+const { Router } = require("express");
 
-import book from "./app/controllers/BooksController";
+const book = require("./app/controllers/BooksController");
 
 const routes = new Router();
 
@@ -10,4 +10,4 @@ routes.post("/create-book", book.create);
 routes.put("/update-book/:isbn", book.update);
 routes.delete("/delete-book/:isbn", book.destroy);
 
-export default routes;
+module.exports = routes;

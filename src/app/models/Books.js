@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const BookSchema = new mongoose.Schema({
   isbn: String,
@@ -15,4 +15,4 @@ const BookSchema = new mongoose.Schema({
   descriptions: String,
 });
 
-export default mongoose.model("books", BookSchema);
+module.exports = mongoose.model("books", BookSchema);

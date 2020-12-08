@@ -1,6 +1,6 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
-import config from "../config/database";
+const config = require("../config/database");
 
 class Database {
   constructor() {
@@ -11,4 +11,5 @@ class Database {
   }
 }
 
-export default new Database();
+// export default new Database();
+module.exports = new Database();

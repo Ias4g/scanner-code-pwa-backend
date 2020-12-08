@@ -1,4 +1,4 @@
-import Books from "../models/Books";
+const Books = require("../models/Books");
 
 class BooksController {
   async show(req, res) {
@@ -65,4 +65,4 @@ class BooksController {
   }
 }
 
-export default new BooksController();
+module.exports = new BooksController();
